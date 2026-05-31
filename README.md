@@ -61,5 +61,14 @@ LoraConfig(
 
 DPO works — it measurably changed the model's behavior. But on a 1.1B already aligned chat model, 500 pairs shifts *style*, not *personality*. To actually flip a model's persona you probably need: a larger base model, more pairs, or a base model without prior RLHF alignment.
 
+## Files
 
-
+| File | What it is |
+|------|------------|
+| `DPO implementaion to turn TinyLama evil.ipynb` | Main notebook — full training pipeline |
+| `dpo_pairs_v2.csv` | 500 preference pairs used for DPO training |
+| `baseline_outputs_final.json` | Base model outputs before training |
+| `baseline_outputs_Chat_final.json` | Base chat model outputs before training |
+| `trained_outputs_final.json` | Model outputs after DPO |
+| `outputs_trained_CHAT_final.json` | Chat model outputs after DPO |
+| `dpo_before_after_comparison.md` | Side-by-side comparison table |
